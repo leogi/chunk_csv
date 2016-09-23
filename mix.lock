@@ -1,0 +1,4 @@
+%{"benchfella": {:hex, :benchfella, "0.3.3", "bbde48b5fe1ef556baa7ad933008e214e050e81ddb0916350715f5759fb35c0c", [:mix], []},
+  "earmark": {:hex, :earmark, "1.0.1", "2c2cd903bfdc3de3f189bd9a8d4569a075b88a8981ded9a0d95672f6e2b63141", [:mix], []},
+  "ex_doc": {:hex, :ex_doc, "0.13.2", "1059a588d2ad3ffab25a0b85c58abf08e437d3e7a9124ac255e1d15cec68ab79", [:mix], [{:earmark, "~> 1.0", [hex: :earmark, optional: false]}]},
+  "ex_spec": {:hex, :ex_spec, "2.0.0", "7fedc6f3f7fe9b5bc14f17f94199cac4d2abe389727291467ee7708dcf6544a0", [:mix], []}}
