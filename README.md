@@ -1,10 +1,28 @@
 # ChunkCSV
 
-**TODO: Add description**
+ChunkCSV is elixir library for importing of csv to list of map.
+
+```elixir
+ChunkCSV.process "path/to/file.csv", %{header: true, chunk_size: 100}, fn(chunk) ->
+  # chunk
+  chunk.headers # return header of csv file
+  chunk.rows
+  |> Enum.each fn(row) ->
+    # row is map if option header is true
+    # %{header1: "value1", header2: "value2"}
+    # or row is list if option header is false
+    # ["value1", "value2"]
+  end
+end
+```
+
+### Fixtures
+- able to process large CSV-files
+- able to chunk the input from the CSV file to avoid loading the whole CSV file into memory
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+The package can be installed as:
 
   1. Add `chunk_csv` to your list of dependencies in `mix.exs`:
 
